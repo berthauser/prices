@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="747.0" prefWidth="800.0" styleClass="BorderPane" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ar.dignitas.controller.Prisix">
+   <bottom>
+      <HBox prefHeight="26.0" prefWidth="1051.0" styleClass="footer-pane" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+         </BorderPane.margin>
+         <children>
+            <Label prefHeight="16.0" prefWidth="224.0" text="© 2023 * Dignitas Software" HBox.hgrow="ALWAYS">
+               <font>
+                  <Font name="System Italic" size="11.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="2.0" top="5.0" />
+               </HBox.margin>
+            </Label>
+            <Label prefHeight="16.0" prefWidth="66.0" text="Ver. 1.0" HBox.hgrow="ALWAYS">
+               <font>
+                  <Font name="System Italic" size="11.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="550.0" top="5.0" />
+               </HBox.margin>
+            </Label>
+         </children></HBox>
+   </bottom>
+   <top>
+      <VBox prefHeight="55.0" prefWidth="1276.0" spacing="1.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox fillHeight="false" prefHeight="40.0" prefWidth="957.0" spacing="15.0">
+               <children>
+                  <ImageView fx:id="imgLogo" fitHeight="50.0" fitWidth="81.0" pickOnBounds="true" />
+                  <VBox alignment="CENTER" fillWidth="false" prefHeight="50.0" prefWidth="603.0" HBox.hgrow="ALWAYS">
+                     <children>
+                        <Label prefHeight="35.0" prefWidth="425.0" text=" CLIENTES - Consulta de Precios" textAlignment="CENTER">
+                           <font>
+                              <Font name="System Bold Italic" size="24.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </VBox>
+                  <VBox alignment="CENTER_RIGHT" prefHeight="51.0" prefWidth="131.0" HBox.hgrow="ALWAYS">
+                     <children>
+                        <Label fx:id="lblFecha" alignment="CENTER" prefHeight="27.0" prefWidth="119.0" text="28 Jul 2020" textAlignment="CENTER" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblHora" alignment="CENTER" prefHeight="30.0" prefWidth="112.0" text="11:55:00" textAlignment="CENTER" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </children>
+         <padding>
+            <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+         </padding>
+      </VBox>
+   </top>
+   <padding>
+      <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+   </padding>
+   <center>
+      <HBox prefHeight="679.0" prefWidth="831.0" spacing="1.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox prefHeight="460.0" prefWidth="798.0" style="-fx-background-color: #bdbdbd;">
+               <children>
+                  <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="10.0" prefHeight="66.0" prefWidth="842.0" spacing="20.0" style="-fx-background-color: #273746;">
+                     <padding>
+                        <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+                     </padding>
+                     <children>
+                        <TextField fx:id="txtCodigo" prefHeight="25.0" prefWidth="241.0" promptText="Código de Producto">
+                           <tooltip>
+                              <Tooltip text="Ingrese el códgo del Producto" />
+                           </tooltip>
+                           <HBox.margin>
+                              <Insets left="3.0" />
+                           </HBox.margin>
+                        </TextField>
+                        <TextField fx:id="txtDescripcion" prefHeight="25.0" prefWidth="530.0" promptText="Descripción" />
+                     </children>
+                  </HBox>
+                  <VBox prefHeight="610.0" prefWidth="741.0" style="-fx-background-color: Gray;">
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                     <children>
+                        <HBox prefHeight="266.0" prefWidth="711.0">
+                           <children>
+                              <Label styleClass="label-Descuento" text="PRECIO CONTADO">
+                                 <HBox.margin>
+                                    <Insets top="115.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <TextField fx:id="txtPrecioContado" editable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="102.0" prefWidth="515.0">
+                                 <font>
+                                    <Font size="48.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets bottom="15.0" left="15.0" right="15.0" top="80.0" />
+                                 </HBox.margin>
+                              </TextField>
+                           </children>
+                           <VBox.margin>
+                              <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox prefHeight="254.0" prefWidth="757.0">
+                           <children>
+                              <Label styleClass="label-Descuento" text="PRECIO LISTA">
+                                 <HBox.margin>
+                                    <Insets top="120.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <TextField fx:id="txtPrecioFinanciado" editable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="102.0" prefWidth="515.0">
+                                 <font>
+                                    <Font size="48.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets bottom="15.0" left="25.0" right="15.0" top="80.0" />
+                                 </HBox.margin>
+                              </TextField>
+                           </children>
+                           <VBox.margin>
+                              <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+                           </VBox.margin>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+            </VBox>
+         </children>
+         <padding>
+            <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+         </padding>
+         <BorderPane.margin>
+            <Insets left="5.0" />
+         </BorderPane.margin>
+      </HBox>
+   </center>
+</BorderPane>
